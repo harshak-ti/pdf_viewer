@@ -40,9 +40,13 @@ See https://github.com/adobe-type-tools/cmap-resources
       href="locale/locale.properties"
     />
     <script src="../build/pdf.js"></script>
-
     <script src="viewer.js"></script>
   </head>
+  <style type="text/css" media="print">
+    * {
+      display: none;
+    }
+  </style>
 
   <body tabindex="1" class="loadingInProgress">
     <div id="outerContainer">
@@ -190,7 +194,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
             <button
               id="secondaryOpenFile"
-              class="secondaryToolbarButton openFile visibleLargeView"
+              class="secondaryToolbarButton openFile visibleLargeView d-none"
               title="Open File"
               tabindex="52"
               data-l10n-id="open_file"
@@ -200,7 +204,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
             <button
               id="secondaryPrint"
-              class="secondaryToolbarButton print visibleMediumView"
+              class="secondaryToolbarButton print visibleMediumView d-none"
               title="Print"
               tabindex="53"
               data-l10n-id="print"
@@ -210,7 +214,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
             <button
               id="secondaryDownload"
-              class="secondaryToolbarButton download visibleMediumView"
+              class="secondaryToolbarButton download visibleMediumView d-none"
               title="Download"
               tabindex="54"
               data-l10n-id="download"
@@ -451,7 +455,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
                 <button
                   id="openFile"
-                  class="toolbarButton openFile hiddenLargeView"
+                  class="toolbarButton openFile hiddenLargeView d-none"
                   title="Open File"
                   tabindex="32"
                   data-l10n-id="open_file"
@@ -461,7 +465,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
                 <button
                   id="print"
-                  class="toolbarButton print hiddenMediumView"
+                  class="toolbarButton print hiddenMediumView d-none"
                   title="Print"
                   tabindex="33"
                   data-l10n-id="print"
@@ -471,7 +475,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
                 <button
                   id="download"
-                  class="toolbarButton download hiddenMediumView"
+                  class="toolbarButton download hiddenMediumView d-none"
                   title="Download"
                   tabindex="34"
                   data-l10n-id="download"

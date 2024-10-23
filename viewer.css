@@ -2576,3 +2576,7 @@ html[dir="rtl"] #documentPropertiesOverlay .row > * {
     display: none;
   }
 }
+
+.d-none {
+  display: none;
+}

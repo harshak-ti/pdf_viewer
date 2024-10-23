@@ -1089,6 +1089,10 @@
         return open;
       }(),
       download: function download() {
+        // TI: restrict user from downloading the document
+        alert("This report cannot be downloaded as it's for viewing only.")
+        return;
+
         var _this3 = this;
     
         function downloadByUrl() {
@@ -1572,6 +1576,10 @@
         this.pdfRenderingQueue.renderHighestPriority();
       },
       beforePrint: function beforePrint() {
+        // TI: restrict from priting the document
+        alert("This report cannot be printed as it's for viewing only.")
+        return;
+
         var _this7 = this;
     
         if (this.printService) {
